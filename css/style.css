@@ -1,0 +1,526 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h2{
+    color: black;
+    letter-spacing: 5px;
+    font-size: 2.5em;
+    margin-top: 130px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+h3{
+    color: black;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+body{
+    background-color: white;
+}
+
+a{
+    color: white;
+    font-size: 1.1em;
+    transition-duration: 0.3s;
+}
+
+a:hover{
+    color: rgb(158, 158, 158);
+    text-decoration: underline;
+    transition-duration: 0.3s;
+}
+
+.font{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* MENU */
+
+header{
+    background-color: #252B25;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 2px 10px 1px  black;
+
+    display: flex;
+    align-items: center;
+
+    position: fixed;
+}
+
+.img-logo{
+    width: 155px;
+    text-align: right;
+}
+
+header img{
+    width: 140px;
+}
+
+header nav{
+    width: 80%;
+    text-align: center;
+}
+
+header nav ul{
+    display: inline-flex;
+}
+
+header nav ul li{
+    margin-right: 25px;
+    letter-spacing: 2px;
+}
+
+/* INICIO */
+
+#inicio{
+    width: 100%;
+    height: 100vh;
+
+    animation-name: fundo;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+#bg{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top, black, transparent);
+}
+
+#bg .titulo{
+    width: 100%;
+    height: 100vh;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo h1{
+    background-color: #252B2590 ;
+    box-shadow: 0 5px 15px #252B25;
+
+    width: 20%;
+    height: 12vh;
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: 300;
+
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.titulo p{
+    margin-top: 10px;
+    margin-bottom: 70px;
+    font-size: 1.2em;
+}
+
+#bg #autor{
+    color: rgb(49, 49, 49);
+    position: absolute;
+    top: 92vh;
+    left: 3%;
+}
+
+    @keyframes fundo{
+        0%{
+            background-image: url(../img/background-index/junior-reis-img01.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        23%{
+            background-image: url(../img/background-index/junior-reis-img02.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        56%{
+            background-image: url(../img/background-index/junior-reis-img03.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        89%{
+            background-image: url(../img/background-index/junior-reis-img04.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        100%{
+            background-image: url(../img/background-index/junior-reis-img01.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+/* POSTAGENS */
+
+#postagens{
+    width: 100%;
+    height: auto;
+
+    background-image: url(../img/background-index/Vector\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 -6px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box{
+    width: 800px;
+    height: auto;
+    /*border: 1px solid black;*/
+    border-radius: 20px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.post{
+    background-color: rgb(230, 230, 230);
+    width: 100%;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px black;
+
+    display: flex;
+    align-items: center;
+    transition: 1s;
+}
+
+.post:hover{
+    background-color: rgb(190, 190, 190);
+    width: 100%;
+    height: 160px;
+    transition: 1s;
+}
+
+.post .img-post{
+    background-color: rgb(176, 176, 176);
+    width: 130px;
+    height: 130px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.post .nome-resumo{
+    width: 75%;
+    height: 90%;
+    margin: auto;
+}
+
+.post .nome-resumo p{
+    font-size: 1.1em;
+}
+
+.box a{
+    color: black;
+    letter-spacing: 1px;
+    font-size: 1.3em;
+    transition-duration: 0.3s;
+}
+
+.box a:hover{
+    text-decoration: underline;
+    transition-duration: 0.3s;
+}
+
+/* Bibliografia */
+
+#bibliografia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    background-color: black;
+    width: 80%;
+    height: 1px;
+    margin: 5px;
+}
+
+.scroll{
+    width: 90%;
+    height: 300px;
+    margin: 10px;
+    overflow: auto;
+    scroll-behavior: smooth;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scroll::-webkit-scrollbar{
+    height: 0px;
+}
+
+.box-book{
+    min-width: 33.33%;
+    height: 280px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-book{
+    background-color: rgb(176, 176, 176);
+    min-width: 155px;
+    height: 190px;
+    margin: 5px;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.img-book:hover{
+    min-width: 165px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.box-book h3{
+    font-size: 1.3em;
+    margin: 1px;
+}
+
+.box-book p{
+    color: rgb(41, 41, 41);
+    font-size: 1em;
+}
+
+button{
+    position: absolute;
+    background-color:#252B2500;
+    border: none;
+}
+
+#b1{
+    left: 70px;
+    transition: 1s;
+}
+
+#b1 img:hover{
+    width: 21px;
+    transition: 1s;
+}
+
+#b2{
+    right: 70px;
+    transition: 1s;
+}
+
+#b2 img:hover{
+    width: 21px;
+    transition: 1s;
+}
+
+/* Artigos */
+
+#artigos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-2{
+    width: 800px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 5px 15px black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.artigo{
+    background-color: rgb(230, 230, 230);
+    width: 95%;
+    height: 65px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px black;
+    padding-left: 15px;
+    transition: 1s;
+    margin-bottom: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.artigo:hover{
+    background-color: rgb(190, 190, 190);
+    height: 70px;
+    transition: 1s;
+}
+
+.artigo h3{
+    margin-bottom: 5px;
+    font-size: 1.3em;
+}
+
+.box-2 a{
+    color: black;
+    letter-spacing: 1px;
+    font-size: 1.3em;
+    transition-duration: 0.3s;
+}
+
+.box-2 a:hover{
+    text-decoration: underline;
+    transition-duration: 0.3s;
+}
+
+/* Artistas */
+
+#artistas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-2{
+    width: 90%;
+    height: 300px;
+    margin: 10px;
+    overflow: auto;
+    scroll-behavior: smooth;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scroll-2::-webkit-scrollbar{
+    height: 0px;
+}
+
+.box-artista{
+    min-width: 33.33%;
+    height: 280px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-artista{
+    background-color: rgb(176, 176, 176);
+    min-width: 190px;
+    height: 190px;
+    margin: 5px;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.img-artista:hover{
+    min-width: 200px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.box-artista h3{
+    font-size: 1.1em;
+    margin: 1px;
+}
+
+.box-artista p{
+    color: rgb(41, 41, 41);
+    font-size: 1em;
+}
+
+button{
+    position: absolute;
+    background-color:#252B2500;
+    border: none;
+}
+
+#b3{
+    left: 70px;
+    transition: 1s;
+}
+
+#b3 img:hover{
+    width: 21px;
+    transition: 1s;
+}
+
+#b4{
+    right: 70px;
+    transition: 1s;
+}
+
+#b4 img:hover{
+    width: 21px;
+    transition: 1s;
+}
+
+/* Rodape */
+
+footer{
+    background-color: #252B25;
+    width: 100%;
+    height: 150px;
+    box-shadow: 0 -2px 10px black;
+    margin-top: 50px;
+    color: rgb(191, 191, 191);
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h2{
+    color: rgb(222, 222, 222);
+    font-size: 1.2em;
+    margin: 10px;
+    letter-spacing: 1px;
+}
+
+#creator{
+    font-size: 1.1em;
+}
