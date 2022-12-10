@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h2{
+    color: black;
+    letter-spacing: 5px;
+    font-size: 2.5em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+h3{
+    color: black;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+body{
+    background-color: white;
+}
+
+.font{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* MENU */
+
+header{
+    background-color: #252B25;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 2px 10px 1px  black;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.img-logo{
+    width: 155px;
+    text-align: right;
+}
+
+header img{
+    width: 140px;
+}
+
+header .nav{
+    width: 110px;
+    margin-right: 25px;
+    letter-spacing: 2px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav img{
+    width: 15px;
+}
+
+header .b{
+    margin-right: 30px;
+    font-size: 1.5em;
+    color: rgb(212, 212, 212);
+}  
+
+a{
+    color: white;
+    font-size: 1.3em;
+    transition-duration: 0.3s;
+}
+
+a:hover{
+    color: rgb(191, 191, 191);
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+/* MAIN */
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-book2{
+    background-color: #019C9560;
+    width: 800px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book{
+    background-color: rgb(176, 176, 176);
+    min-width: 155px;
+    height: 190px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.book img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.titulo-autor{ 
+    width: 70%;
+    height: 170px;
+    padding: 15px;
+}
+
+h1{
+    letter-spacing: 1px;
+    font-size: 1.7em;
+}
+
+.titulo-autor p{
+    color: rgb(88, 88, 88);
+    margin: 10px;
+}
+
+.ta{
+    width: 100%;
+    height: 80%;
+}
+
+.buy-button{
+    color: black;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 15px;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+.buy-button:hover{ 
+    transition: 0.5s;
+    color: #00a800;
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 15px;
+    border: 1px solid #00a800;
+}
+
+.resumo{
+    background-color: #019C9560;
+    width: 800px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: justify;
+    margin: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.resumo h2{
+    margin: 10px;
+    margin-left: 0px;
+    letter-spacing: normal;
+    font-size: 1.5em;
+}
+
+.resumo p{
+    font-size: 1.1em;
+}
+
+/* Bibliografia */
+
+#bibliografia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    background-color: black;
+    width: 80%;
+    height: 1px;
+    margin: 5px;
+}
+
+.scroll{
+    width: 90%;
+    height: 300px;
+    margin: 10px;
+    overflow: auto;
+    scroll-behavior: smooth;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scroll::-webkit-scrollbar{
+    height: 0px;
+}
+
+.box-book{
+    min-width: 33.33%;
+    height: 280px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-book{
+    background-color: rgb(176, 176, 176);
+    min-width: 155px;
+    height: 190px;
+    margin: 5px;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.img-book img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.img-book:hover{
+    min-width: 165px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.box-book h3{
+    text-align: center;
+    width: 80%;
+    height: 60px;
+    font-size: 1em;
+    margin: 1px;
+}
+
+.box-book p{
+    color: rgb(41, 41, 41);
+    font-size: 1em;
+}
+
+button{
+    position: absolute;
+    background-color:#252B2500;
+    border: none;
+}
+
+#b1{
+    left: 70px;
+    transition: 1s;
+}
+
+#b1 img:hover{
+    width: 21px;
+    transition: 1s;
+}
+
+#b2{
+    right: 70px;
+    transition: 1s;
+}
+
+#b2 img:hover{
+    width: 21px;
+    transition: 1s;
+}
+
+/* Rodape */
+
+footer{
+    background-color: #252B25;
+    width: 100%;
+    height: 150px;
+    box-shadow: 0 -2px 10px black;
+    margin-top: 50px;
+    color: rgb(191, 191, 191);
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h2{
+    color: rgb(222, 222, 222);
+    font-size: 1.2em;
+    margin: 10px;
+    letter-spacing: 1px;
+}
+
+#creator{
+    font-size: 1.1em;
+}

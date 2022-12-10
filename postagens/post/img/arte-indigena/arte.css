@@ -1,0 +1,34 @@
+.post{
+    margin: 25px;
+}
+
+.img-arte{
+    width: 100%;
+    height: auto;
+
+}
+
+.ceramica{
+    width: 40%;
+    margin: 10px;
+}
+
+.mascara{
+    width: 40%;
+}
+
+.cestaria{
+    width: 50%;
+}
+
+.plumaria{
+    width: 50%;
+}
+
+.corpo-pintura{
+    width: 50%;
+}
+
+.mapa{
+    width: 60%;
+}

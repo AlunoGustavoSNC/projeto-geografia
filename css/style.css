@@ -30,13 +30,13 @@ body{
     background-color: white;
 }
 
-a{
+.a{
     color: white;
     font-size: 1.1em;
     transition-duration: 0.3s;
 }
 
-a:hover{
+.a:hover{
     color: rgb(158, 158, 158);
     text-decoration: underline;
     transition-duration: 0.3s;
@@ -204,7 +204,7 @@ header nav ul li{
 }
 
 .post{
-    background-color: rgb(230, 230, 230);
+    background-color: #019C9560;
     width: 100%;
     height: 150px;
     border: 1px solid black;
@@ -219,10 +219,21 @@ header nav ul li{
 }
 
 .post:hover{
-    background-color: rgb(190, 190, 190);
+    background-color: #019C9590;
     width: 100%;
     height: 160px;
     transition: 1s;
+}
+
+.ala{
+    width: 700px;
+    height: 2px;
+}
+
+.img-post img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
 }
 
 .post .img-post{
@@ -246,12 +257,17 @@ header nav ul li{
 
 .box a{
     color: black;
+    text-decoration: none;
+}
+
+.box .mais{
+    color: black;
     letter-spacing: 1px;
     font-size: 1.3em;
     transition-duration: 0.3s;
 }
 
-.box a:hover{
+.box .mais:hover{
     text-decoration: underline;
     transition-duration: 0.3s;
 }
@@ -307,6 +323,12 @@ header nav ul li{
     border-radius: 5px;
 }
 
+.img-book img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
 .img-book:hover{
     min-width: 165px;
     height: 200px;
@@ -314,7 +336,10 @@ header nav ul li{
 }
 
 .box-book h3{
-    font-size: 1.3em;
+    text-align: center;
+    width: 80%;
+    height: 60px;
+    font-size: 1em;
     margin: 1px;
 }
 
@@ -359,6 +384,7 @@ button{
 }
 
 .box-2{
+    background-color: #019C9570;
     width: 800px;
     height: auto;
     border: 1px solid black;
@@ -374,8 +400,8 @@ button{
 
 .artigo{
     background-color: rgb(230, 230, 230);
-    width: 95%;
-    height: 65px;
+    width: 98%;
+    height: 80px;
     border: 1px solid black;
     border-radius: 20px;
     box-shadow: 0 5px 15px black;
@@ -390,23 +416,41 @@ button{
 
 .artigo:hover{
     background-color: rgb(190, 190, 190);
-    height: 70px;
+    height: 90px;
     transition: 1s;
+}
+
+#artigos h2{
+    margin-bottom: 60px;
 }
 
 .artigo h3{
     margin-bottom: 5px;
-    font-size: 1.3em;
+    font-size: 1.1em;
+    letter-spacing: 1px;
 }
 
-.box-2 a{
+.box-2 .link{
+    color: black;
+    text-decoration: none;
+    width: 97%;
+    height: 95px;
+    transition: 1s;
+}
+
+.box-2 .link:hover{
+    height: 105px;
+    transition: 1s;
+}
+
+.box-2 .mais{
     color: black;
     letter-spacing: 1px;
     font-size: 1.3em;
     transition-duration: 0.3s;
 }
 
-.box-2 a:hover{
+.box-2 .mais:hover{
     text-decoration: underline;
     transition-duration: 0.3s;
 }
@@ -452,6 +496,13 @@ button{
     height: 190px;
     margin: 5px;
     transition: 0.5s;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.img-artista img{
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
 }
 

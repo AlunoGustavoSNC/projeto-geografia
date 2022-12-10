@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Aldeamentos Indígenas do Rio de Janeiro</title>
+
+    <link rel="stylesheet" href="style-b.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="font">
+        <div class="img-logo">
+            <img src="../img/marca-if-baiano-campus-guanambi-horizontal-geografia-250px.png" alt="">
+        </div>
+        <p class="b">BIBLIOGRAFIA</p>
+        <a class="nav" href="../index.html">
+            <img src="../img/back.png" alt="">
+            <p>Início</p>
+        </a>
+    </header>
+    <main class="font">
+        <section class="box-book2">
+            <div class="book">
+                <img src="../img/bibliografia/aldeamentos-indígenas-do-rio-de-Janeiro.jpeg" alt="Aldeamentos Indígenas do Rio de Janeiro">
+            </div>
+            <div class="titulo-autor">
+                <div class="ta">
+                    <h1>Aldeamentos Indígenas do Rio de Janeiro</h1>
+                    <p>José Ribamar Bessa Freire</p>
+                </div>
+
+                <a href="https://www.estantevirtual.com.br/livros/jose-ribamar-bessa-freire/aldeamentos-indigenas-do-rio-de-janeiro/519269621?livro_usado=1&b_order=preco&gclid=Cj0KCQiA1ZGcBhCoARIsAGQ0kkrJkZbgYXRQX6kgd7-TJKHKAUVzGqUfv2oeKnLX39ChnwuBiaobzN4aAvYXEALw_wcB#" target="_blank" class="buy-button">Comprar</a>
+            </div>
+        </section>
+        <section class="resumo">
+            <h2>Resumo</h2>
+            <p>Este texto traça um cenário da passagem dos primeiros habitantes fluminenses desde a chegada do colonizador europeu até o último registro oficial de um índio nativo do estado do Rio de Janeiro, já no século XX. O livro é ilustrado por desenhos de gravuristas como Rugendas e Debret, além de textos extraídos de diários de exploradores e viajantes, tais como Pero Magalhães Gândavo, e de registros oficiais da época.</p>
+        </section>
+
+        <section id="bibliografia" class="font">
+            <h2>Bibliografia</h2>
+
+            <div class="line"></div>
+
+            <div class="scroll">
+
+                <button id="b1" onclick="scrollll()">
+                    <img src="../img/left.png" alt="">
+                </button>
+
+                <div class="box-book">
+                    <div class="img-book">
+                        <a href="b1.html">
+                            <img src="../img/bibliografia/direitos-dos-povos-indigenas-em-disputa-no-STF.jpeg" alt="Direitos dos povos indígenas em disputa no STF Manuela Carneiro da Cunha">
+                        </a>
+                    </div>
+                    <h3>Direitos dos povos indígenas em disputa no STF</h3>
+                    <p>Manuela Carneiro da Cunha</p>
+                </div>
+
+                <div class="box-book">
+                    <div class="img-book">
+                        <a href="b2.html">
+                            <img src="../img/bibliografia/indio-no-brasil-historia-direitos-e-cidadania.jpeg" alt="Índios no Brasil: História, direitos e cidadania">
+                        </a>
+                    </div>
+                    <h3>Índios no Brasil: História, direitos e cidadania</h3>
+                    <p>Manuela Carneiro da Cunha</p>
+                </div>
+
+                <div class="box-book">
+                    <div class="img-book">
+                        <a href="b3.html">
+                            <img src="../img/bibliografia/ALDEIAS-PRÉ-COLONIAIS-DA-TRADIÇÃO-ARATU-DA-SERRA-DE-MONTE-ALTO-REGIÃO-SUDOESTE-DA-BAHIA.jpg" alt="Aldeias Pré-Coloniais Da Tradição Aratu Da Serra De Monte Alto – Região Sudoeste Da Bahia">
+                        </a>
+                    </div>
+                    <h3>Aldeias Pré-Coloniais Da Tradição Aratu Da Serra De Monte Alto</h3>
+                    <p>Joaquim Perfeito Da Silva</p>
+                </div>
+
+                <div class="box-book">
+                    <div class="img-book">
+                        <a href="b4.html">
+                            <img src="../img/bibliografia/Os-índios-em-arquivos-do-Rio-de-Janeiro-volume-1.jpeg" alt="Os Índios Em Arquivos Do Rio De Janeiro - Volume 1">
+                        </a>
+                    </div>
+                    <h3>Os Índios Em Arquivos Do Rio De Janeiro - Volume 1</h3>
+                    <p>José Ribamar Bessa Freire</p>
+                </div>
+
+                <div class="box-book">
+                    <div class="img-book">
+                        <a href="b5.html">
+                            <img src="../img/bibliografia/aldeamentos-indígenas-do-rio-de-Janeiro.jpeg" alt="Aldeamentos Indígenas do Rio de Janeiro">
+                        </a>
+                    </div>
+                    <h3>Aldeamentos Indígenas do Rio de Janeiro</h3>
+                    <p>José Ribamar Bessa Freire</p>
+                </div>
+
+                <button id="b2" onclick="scrollrr()">
+                    <img src="../img/right.png" alt="">
+                </button>
+            </div>
+
+            <div class="line"></div>
+
+            <script>
+                function scrollrr(){
+                    var left=document.querySelector(".scroll")
+                    left.scrollBy(405, 0)
+                }
+                function scrollll(){
+                    var left=document.querySelector(".scroll")
+                    left.scrollBy(-405, 0)
+                }
+            </script>
+        </section>
+    </main>
+    <footer>
+        <h2>Instituto Federal Baiano - campus Guanambi</h2>
+        <p>Desenvolvimento:</p>
+        <p id="creator">Gustavo da S. N. Costa | 2º BII 2022/2023</p>
+        <p>gustavosncosta@gmail.com</p>
+    </footer>
+</body>
+</html>
